@@ -2,6 +2,6 @@
 Very simple Entity Service implementation (Including controllers, repositories, models, etc. )
 
 
-<p>How-to</p>
-1. Put the /bin/release/EntityServiceBoilerplate.dll to the <sc>/website/bin
-2. Request the following uri <sc_host>/sitecore/api/ssc/Sitecore-EntityServiceBoilerplate-Controllers/SimpleEntity
+<h3>How-to</h3>
+1. Put the <b>/bin/release/EntityServiceBoilerplate.dll</b> to the <b>[sc]/Website/bin</b> folder
+2. Request the following uri <i>[sc_host]/sitecore/api/ssc/Sitecore-EntityServiceBoilerplate-Controllers/SimpleEntity</i>
