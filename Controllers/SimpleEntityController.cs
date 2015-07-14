@@ -1,6 +1,7 @@
 ﻿using System.Web.Http;
 using System.Web.Http.Cors;
 using Sitecore.EntityServiceBoilerplate.Models;
+using Sitecore.EntityServiceBoilerplate.Repositories;
 using Sitecore.Services.Core;
 using Sitecore.Services.Infrastructure.Sitecore.Services;
 
@@ -10,6 +11,10 @@ namespace Sitecore.EntityServiceBoilerplate.Controllers
     [ServicesController]
     public class SimpleEntityController : EntityService<SimpleEntity>
     {
+        public SimpleEntityController() : this(new SimpleEntityRepository())
+        {
+        }
+
         public SimpleEntityController(IRepository<SimpleEntity> repository)
             : base(repository)
         {
